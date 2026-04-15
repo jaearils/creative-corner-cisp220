@@ -1,0 +1,241 @@
+/* main stuff */
+body {
+    background-color: #F6F0ED;
+    color: #282D16;
+}
+p {
+    font-family: Arial Narrow, sans-serif;
+    padding: 0 30px;
+    font-size: 18px;
+}
+li {
+    font-family: Arial Narrow, sans-serif;
+    padding: 0;
+    font-size: 18px;
+}
+h3 {
+    text-decoration: none;
+}
+
+.container {
+    border: 3px solid #282D16;
+    border-radius: 20px;
+    width: 1300px;
+    margin: 40px auto;
+}
+
+/* header section */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #BFBAB0;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.main-header {
+    padding: 40px 25px;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #DBD5CF;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 18px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #282D16;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+#google_translate_element {
+    white-space: nowrap;
+    padding: 5px 15px;
+}
+.top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dark-mode-btn {
+    background-color: #DBD5CF;
+    text-align: center;
+    font-family: Arial Narrow, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #282D16;
+    border: 2px solid grey;
+    border-radius: 8px;
+    margin: 10px;
+    height: 40px;
+    width: 200px;
+    padding: 5px 20px;
+}
+
+/* body section */
+.section-header {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* footer section */
+footer {
+    background-color: #DBD5CF;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    font-family: Arial Narrow, sans-serif;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* project page */
+.main-project-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project-indiv {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-indiv img {
+    width: 270px;
+    height: 245px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* index page */
+.home-desc {
+    text-align: center;
+}
+
+/* contact page */
+.contact-page {
+    text-align: center;
+}
+
+/* about section */
+.section-header {
+    text-align: center;
+}
+
+.about-page {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 0 20px 20px;
+}
+
+.my-image {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* project template section */
+.top-section {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.project-img {
+    width: 30%;
+    height: 350px;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.right-section {
+    width: 70%;
+    padding: 0 20px;
+}
+
+.right-section .section-header {
+    text-align: left;
+}
+
+.project-indiv a {
+    color: #282D16;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* dark mode */
+.dark-mode {
+    background-color: #14170B;
+    color: #BFBAB0;
+}
+.dark-mode .container {
+    border-color: #BFBAB0;
+}
+.dark-mode .top-header {
+    background-color: #1E2211;
+}
+.dark-mode nav, .dark-mode footer {
+    background-color: #282D16;
+}
+.dark-mode nav a {
+    color: #BFBAB0;
+}
+.dark-mode .project-indiv a {
+    color: #BFBAB0;
+}
+.dark-mode .dark-mode-btn {
+    background-color: #282D16;
+    color: #BFBAB0;
+}
+
+/* max width */
+@media screen and (min-width: 1200px), print {
+    .container {
+        width: 1300px;
+    }
+}
+/* tablet screens */
+@media (max-width: 950px) {
+    .project-indiv {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+/* phone screens */
+@media (max-width: 500px) {
+    .project-indiv {
+        flex: 1 1 100%;
+    }
+}

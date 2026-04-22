@@ -20,7 +20,7 @@ h3 {
 .container {
     border: 3px solid #282D16;
     border-radius: 20px;
-    width: 1300px;
+    max-width: 1300px;
     margin: 40px auto;
 }
 
@@ -224,7 +224,8 @@ footer {
 /* max width */
 @media screen and (min-width: 1200px), print {
     .container {
-        width: 1300px;
+        max-width: 1300px;
+        width: 100%;
     }
 }
 /* tablet screens */
